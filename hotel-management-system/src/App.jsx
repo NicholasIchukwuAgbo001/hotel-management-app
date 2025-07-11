@@ -1,7 +1,15 @@
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  `;
+
 const App = () => {
   return (
     <div>
-     <h1> Hello World </h1>
+     <H1> Hello World </H1>
     </div>
   )
 }
