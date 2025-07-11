@@ -15,17 +15,23 @@ const App = () => {
     <>
       <GlobalStyles />
       <StyleApp>
-        <Row />
-        <Heading type='h1'>Hello World</Heading>
+        <Row type="horizontal">
+          <Heading type='h1'>The Wild Oasis</Heading>
+          
+          <div>
+            <Heading type='h2'>Check in and out</Heading>
+            <Button>Check in</Button>
+            <Button>Check out</Button>
+          </div>
+        </Row>
 
-        <Heading type='h2'>Hello World</Heading>
-
-        <Button>Click me</Button>
-        <Input type="text" placeholder="Enter your name" />
-
-        <Heading type='h3'>Hello World</Heading>
-        
-        <Input type="number" placeholder="phone number" />
+       <Row type="vertical">
+        <Heading type='h3'>Form</Heading>
+        <form>
+          <Input type="number" placeholder="phone number" />
+          <Input type="text" placeholder="Enter your name" />
+        </form>
+       </Row>
       </StyleApp>
     </>
   );
