@@ -6,7 +6,6 @@ import Heading from './ui/Heading';
 import Row from './ui/Row';
 
 const StyleApp = styled.main`
-  background-color: orangered;
   padding: 20px;
 `;
 
