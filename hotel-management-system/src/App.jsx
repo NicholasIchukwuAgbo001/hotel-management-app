@@ -13,6 +13,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route index element={<Dashboard />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="bookings" element={<Bookings />} />
         <Route path="cabins" element={<Cabins />} />
