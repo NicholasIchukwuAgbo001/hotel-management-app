@@ -48,10 +48,13 @@ const Link = styled.a`
 const MainNav = () => {
   return (
     <nav>
-      NAV
+      <NavList>
+        <li><Link href="/dashboard">Home</Link></li>
+        <li><Link href="/bookings">Bookings</Link></li>
+      </NavList>
     </nav>
-  )
-}
+  );
+};
 
 export default MainNav
 
