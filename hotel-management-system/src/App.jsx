@@ -7,13 +7,14 @@ import Row from './ui/Row';
 
 const StyleApp = styled.main`
   padding: 20px;
-`;
+  `;
 
 const App = () => {
   return (
     <>
       <GlobalStyles />
       <StyleApp>
+      <Row type="vertical">
         <Row type="horizontal">
           <Heading type='h1'>The Wild Oasis</Heading>
           
@@ -31,6 +32,7 @@ const App = () => {
           <Input type="text" placeholder="Enter your name" />
         </form>
        </Row>
+      </Row>
       </StyleApp>
     </>
   );
