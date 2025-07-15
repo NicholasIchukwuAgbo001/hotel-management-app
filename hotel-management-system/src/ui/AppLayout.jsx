@@ -11,7 +11,7 @@ const SytledAppLayaout = styled.div`
 `;
 
 const Main = styled.main`
-    background-color: green;
+    background-color: var(--color-grey-50);
     padding: 4%.8rem 6.6rem;
 `;
 
