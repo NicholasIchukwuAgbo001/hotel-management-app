@@ -20,8 +20,8 @@ const App = () => {
           
           <div>
             <Heading type='h2'>Check in and out</Heading>
-            <Button>Check in</Button>
-            <Button>Check out</Button>
+            <Button variation="primary" size="medium">Check in</Button>
+            <Button variation="secondary" size="small">Check out</Button>
           </div>
         </Row>
 
