@@ -1,20 +1,33 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const fontSizes = {
-  h1: "4rem",
-  h2: "3rem",
-  h3: "2.2rem",
-};
-
-const fontWeights = {
-  h1: 600,
-  h2: 500,
-  h3: 400,
-};
+// const test = css`
+//   text-align: center;
+//   ${10 > 5 && "background-color: yellow"}
+// `;
 
 const Heading = styled.h1`
-  font-size: ${(props) => fontSizes[props.type] || "2rem"};
-  font-weight: ${(props) => fontWeights[props.type] || 400};
+  ${(props) =>
+    props.as === "h1" &&
+    css`
+      font-size: 3rem;
+      font-weight: 600;
+    `}
+
+  ${(props) =>
+    props.as === "h2" &&
+    css`
+      font-size: 2rem;
+      font-weight: 600;
+    `}
+    
+    ${(props) =>
+    props.as === "h3" &&
+    css`
+      font-size: 2rem;
+      font-weight: 500;
+    `}
+    
+  line-height: 1.4;
 `;
 
 export default Heading;
