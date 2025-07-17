@@ -17,7 +17,6 @@ import Booking from "./pages/Booking";
 import Checkin from "./pages/Checkin";
 import ProtectedRoute from "./ui/ProtectedRoute";
 import { DarkModeProvider } from "./context/DarkModeContext";
-import SignupForm from "./features/authentication/SignupForm";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -56,7 +55,6 @@ function App() {
             </Route>
 
             <Route path="login" element={<Login />} />
-            <Route path="signup" element={<SignupForm />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
